@@ -153,3 +153,62 @@ th {
 .status.inactive {
     color: var(--red);
 }
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: var(--white);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 5px;
+}
+
+.filter-buttons::-webkit-scrollbar {
+    height: 6px;
+}
+
+.filter-buttons::-webkit-scrollbar-thumb {
+    background-color: var(--black2);
+    border-radius: 3px;
+}
+
+.filter-buttons::-webkit-scrollbar-track {
+    background: var(--gray);
+}
+
+/* Filter Button Styles */
+.filter-buttons button {
+    position: relative;
+    padding: 8px 15px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--blue);
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.filter-buttons button:hover {
+    background: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--blue);
+}
+
+/* Active State */
+.filter-buttons button.active {
+    background: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--blue);
+}
+
